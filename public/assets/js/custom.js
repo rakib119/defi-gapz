@@ -514,3 +514,12 @@ if (htmlTag.getAttribute('dir') === 'rtl') {
 }
 // =================== rtl icon direction chnage end here =================== //
 
+// Upload image Preview
+let loadFile = function(event,previewClass) {
+    var output = document.getElementById(previewClass);
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.style.display = 'block';
+    output.onload = function() {
+        URL.revokeObjectURL(output.src) // free memory
+    }
+};

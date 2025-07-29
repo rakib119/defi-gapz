@@ -223,7 +223,7 @@
             <div class="row gy-5 gx-4">
                 <div class="col-md-6">
                 <div class="footer__about">
-                    <a href="{{ route('index') }}" class="footer__about-logo"><img src="{{ asset("assets/images/logo/logo.png") }}"
+                    <a href="{{ route('index') }}" class="footer__about-logo"><img src="{{ asset('assets/img/logo.png') }}"
                         alt="Logo"></a>
                     <p class="footer__about-moto ">Welcome to our trading site! We offer the best, most
                     affordable products and services around. Shop now and start finding great deals!</p>
