@@ -166,15 +166,25 @@
                     <div class="mb-3" style="text-align: left !important;">
                         <span class="badge bg-danger">Order Ends in <span id="countdown">5:00s</span></span>
                     </div>
+                    <div class="mb-3" style="text-align: left !important;">
+                        <span >Total opportunities found : <span id="opportunities"></span></span>
+                    </div>
+                    <div class="mb-3" style="text-align: left !important;">
+                        <span >Adv No : <span id="advNo"></span></span>
+                    </div>
                     <div>
-                        <table >
+                        <table>
                             <tr>
-                                <td class="borderless" style="width: 50%" align="left">Region:</td>
-                                <td class="borderless" align="left"><span id="region"></span></td>
+                                <td class="borderless" style="width: 50%" align="left">Nick Name :</td>
+                                <td class="borderless" align="left"><span id="nickName"></span></td>
                             </tr>
                             <tr>
-                                <td class="borderless" style="width: 50%" align="left">Certified service supplier:</td>
-                                <td class="borderless"align="left"><span id="supplier"></span></td>
+                                <td class="borderless" align="left">Classify :</td>
+                                <td class="borderless" align="left"><span id="classify"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="borderless" align="left">Fiat :</td>
+                                <td class="borderless" align="left"><span id="fiat"></span></td>
                             </tr>
                             <tr>
                                 <td class="borderless" style="width: 50%" align="left">Market Price:</td>
@@ -182,11 +192,11 @@
                             </tr>
                             <tr>
                                 <td class="borderless" style="width: 50%" align="left">Transaction Price:</td>
-                                <td class="borderless" align="left"><span id="transaction_amount"></span></td>
+                                <td class="borderless" align="left"><span id="transactionAmount"></span></td>
                             </tr>
                             <tr>
                                 <td class="borderless" style="width: 50%" align="left">Amount Of Order:</td>
-                                <td class="borderless" align="left"><span id="amountOfOrder"></span></td>
+                                <td class="borderless" align="left">$<span id="amountOfOrder"></span></td>
                             </tr>
                         </table>
                     </div>
@@ -209,8 +219,8 @@
                     </div>
                     <div class="row justify-content-between my-2">
                         <div class=" col-md-12 col-sm-12">
-                            <h4 class="text-center">Congratulations for</h4>
-                            <h5 class=" text-center"> Successful Transaction!</h5>
+                            <h6 class="text-center">Congratulations for</h6>
+                            <h6 class=" text-center"> Successful Transaction!</h6>
                         </div>
                     </div>
                     <table >
@@ -283,6 +293,7 @@
             var cancelBtn = $('#cancel-btn');
             var sellBtn = $('#sellBtn');
             var errorSection = $('#errorSection');
+            var totalCycle = 0;
             searchingDiv.hide();
             immediateCompititionDiv.hide();
             Congratulations.hide();
@@ -298,6 +309,8 @@
             }
             if (walletBalance > 4.99) {
                 // clicked button
+                var countdownInterval;
+
                 compititionForOrderBtn.click(function() {
                     if (batch_no == 4 && last_competition_time > 60) {
                         $('#errMsg').html(
@@ -306,6 +319,7 @@
                         errorSection.show();
                     } else {
                         // random time
+                        $('#countdown').text('5:00s');
                         arr = [9000, 10000, 11000, 12000];
                         time = arr[Math.floor(Math.random() * arr.length)];
                         const animationDuration = time; // Make animation last exactly the random time
@@ -328,7 +342,7 @@
                             immediateCompititionDiv.show();
                             startCountdown();
                         }, time);
-                        let countdownInterval;
+
                         let countdownDuration = 5 * 60; // 5 minutes in seconds
 
                         function startCountdown() {
@@ -341,9 +355,16 @@
                                 $('#countdown').text(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}s`);
 
                                 if (countdownDuration <= 0) {
+                                    totalCycle++;
+
                                     clearInterval(countdownInterval);
                                     immediateCompititionDiv.hide();
-                                    compititionForOrderBtn.trigger("click"); // restart the cycle
+                                    if(totalCycle<2)//autom
+                                    {
+                                        compititionForOrderBtn.trigger("click"); // restart the cycle
+                                    }else{
+                                        compititionForOrderBtn.show();
+                                    }
                                 }
 
                                 countdownDuration--;
@@ -363,20 +384,42 @@
                             data: {
                                 task: task
                             },
-                            success: function(data) {
-                                data.balance
-                                $('#region').html(data.region);
-                                $('#supplier').html(data.supplier);
-                                $('#marketPrice').html((data.market_price).toFixed(3));
-                                $('#transaction_amount').html((data.transaction_amount).toFixed(
+                            success: function(data)
+                            {
+                                // console.log(data);
+                                if (data.has_error==true) //insufficient fund
+                                {
+                                    $('#errMsg').html(data.error_msg);
+                                    searchingDiv.hide();
+                                    immediateCompititionDiv.hide();
+                                    Congratulations.hide();
+                                    errorSection.show();
+                                    clearInterval(countdownInterval);
+                                    compititionForOrderBtn.show();
+                                    return;
+                                }
+
+                                market_price = data.market_price*1;
+                                trans_amount = data.transaction_amount*1;
+                                order_amount = data.order_amount*1;
+
+                                $('#opportunities').html(data.opportunities);
+                                $('#advNo').html(data.adv_no);
+                                $('#classify').html(data.classify);
+                                $('#nickName').html(data.nick_name);
+                                $('#fiat').html(data.fiat);
+                                $('#marketPrice').html(market_price.toFixed(3));
+                                $('#transactionAmount').html(trans_amount.toFixed(
                                     3));
-                                $('#amountOfOrder').html((data.order_amount).toFixed(3));
+                                $('#amountOfOrder').html(order_amount.toFixed(3));
                             },
                         });
                     }
                 });
                 // click sell btn
                 sellBtn.click(function() {
+                    clearInterval(countdownInterval);
+                    totalCycle=0;
                     task = "sell";
                     $.ajaxSetup({
                         headers: {
@@ -390,6 +433,7 @@
                             task: task
                         },
                         success: function(data) {
+                            // console.log(data);
 
                             $('#orderNo').html(data.order_no);
                             $('#transactionAmount').html(data.transaction_amount);;
@@ -402,14 +446,19 @@
                 });
                 // click cancel btn
                 cancelBtn.click(function() {
+                    totalCycle=0;
+                    clearInterval(countdownInterval);
                     immediateCompititionDiv.hide();
                     compititionForOrderBtn.show();
+                    //this count down not stop properly
+
                 });
             } else {
                 // clicked button
                 compititionForOrderBtn.click(function() {
+                    totalCycle=0;
                     $('#errMsg').html(
-                        "You don't have sufficient fund to place the new order for the competition. Deposit to continue!")
+                        "You don't have sufficient fund to place the new order for trade. Deposit to continue!")
                     errorSection.show();
                 });
             }
