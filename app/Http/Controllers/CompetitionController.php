@@ -157,7 +157,7 @@ class CompetitionController extends Controller
         $supplier = session()->get('session_supplier'); */
         $market_price       = session()->get('session_market_price')*1;
         $transition_amount  = session()->get('session_transaction_amount')*1;
-        return $order_amount       = session()->get('session_order_amount')*1;
+        $order_amount       = session()->get('session_order_amount')*1;
 
         $service_fees       = DB::table('service_fees')->where('transaction_type',5)->first('fees');
         $service_fees_ratio =  $service_fees->fees;

@@ -230,7 +230,7 @@
                         </tr>
                         <tr>
                             <td class="borderless" style="width: 50%" align="left">Transaction Amount :</td>
-                            <td class="borderless"align="center">$<span id="transactionAmount"></span></td>
+                            <td class="borderless"align="center">$<span id="orderAmount"></span></td>
                         </tr>
                         <tr>
                             <td class="borderless" style="width: 50%" align="left">Trading Fees :</td>
@@ -433,10 +433,10 @@
                             task: task
                         },
                         success: function(data) {
-                            // console.log(data);
+                            console.log(data);
 
                             $('#orderNo').html(data.order_no);
-                            $('#transactionAmount').html(data.transaction_amount);;
+                            $('#orderAmount').html(data.transaction_amount);
                             $('#Profit').html(data.profit);
                             $('#tradingFees').html(data.trading_fees);
                             immediateCompititionDiv.hide();
