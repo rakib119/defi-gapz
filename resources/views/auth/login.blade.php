@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="account__shape">
-        <span class="account__shape-item account__shape-item--1"><img src="{{ asset("assets2/images/contact/4.png")}}"
+        <span class="account__shape-item account__shape-item--1"><img src="{{ asset("assets/images/contact/4.png")}}"
             alt="shape-icon"></span>
         </div>
     </section>

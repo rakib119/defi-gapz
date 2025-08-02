@@ -213,7 +213,7 @@
             </div>
             {{-- Congratulations popup --}}
             <div class="custom-modal" id="Congratulations">
-                <div class="custom-modal-content mt-5 center" style="background:var(--tertiary-color);">
+                <div class="custom-modal-content mt-5 center">
                     <div class="successIcon" style="color: var(--brand-color);" >
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
@@ -241,28 +241,14 @@
                             <td class="borderless" align="center">$<span id="Profit"></span></td>
                         </tr>
                     </table>
-                    {{-- <div class="row justify-content-between my-2">
-                        <div class="col-md-6">Order No :</div>
-                        <div class="col-md-6"><span id="orderNo"></span></div>
-                        <hr>
-                    </div>
-                    <div class="row justify-content-between my-2">
-                        <div class="col-md-6">Transaction Amount :</div>
-                        <div class="col-md-6">$<span id="transactionAmount"></span></div>
-                        <hr>
-                    </div>
-                    <div class="row justify-content-between my-2">
-                        <div class="col-md-6">Realized PNL (USDT) :</div>
-                        <div class="col-md-6">$<span id="Profit"></span></div>
-                    </div> --}}
                     <div class="text-center mt-4 mt-3">
                         <button id="okRef" class="trk-btn trk-btn--border trk-btn--primary mt-25" style="width: 100%">Ok</button>
                     </div>
                 </div>
             </div>
             <div class="error-modal" id="errorSection" >
-                <div class="error-modal-content mt-5 center" style="background:var(--tertiary-color);">
-                    <div class="errorIcon " style="color: var(--bg-color-17);">
+                <div class="error-modal-content mt-5 center">
+                    <div class="errorIcon text-danger">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
                     <div class="row my-3">
@@ -271,7 +257,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-4 mt-3">
-                        <button id="ok_hide" class="trk-btn trk-btn--border trk-btn--primary mt-25"  style="width: 100%">Ok</button>
+                        <button id="ok_hide" class="text-center trk-btn trk-btn-danger text-white mt-25" >Ok</button>
                     </div>
                 </div>
             </div>

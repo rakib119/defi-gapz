@@ -11370,3 +11370,12 @@ html[data-bs-theme=dark] .partner--gradient::after {
     transform: scale(1.05);
   }
 }
+.trk-btn-bg-sec{
+  background-color: var(--secondary-color) !important;
+}
+.trk-btn-danger{
+  background-color: var(--bg-color-17) !important;
+}
+.custom-modal-content{
+    background: var(--tertiary-color)!important;
+}

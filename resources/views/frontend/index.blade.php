@@ -233,30 +233,48 @@
     </section>
     <!-- ========== Transaction Records Ends Here========== -->
 
-    <!-- ===============>> video Tutorial 1 start here <<================= -->
-    <section class="pricing padding-top padding-bottom">
+    <!-- ===============>> video Tutorial start here <<================= -->
+    {{-- <section class="pricing padding-top padding-bottom">
         <div class="section-header section-header--max50">
             <h6 class="mb-10 mt-minus-5">video  <span>Tutorials </span></h6>
             <p>We offer the best pricings around - from installations to repairs, maintenance, and more!</p>
         </div>
         <div class="container">
-            <div class="pricing__wrapper">
-                <div class="row g-4 align-items-center">
-                    <div class="col-sm-1 col-lg-4">
-                        <div class="pricing__item" data-aos="fade-right" data-aos-duration="1000">
-                            <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/GBxNmItmOXo?si=l-kMrEdSDYwtS1vb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="testimonial__wrapper">
+                <div class="testimonial__slider2 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial__item testimonial__item--style2">
+                                <div class="testimonial__item-inner">
+                                    <div class="testimonial__item-content">
+                                        <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/42qmAtmYkJc?si=oEvzE9FVb6yy7P80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial__item testimonial__item--style2">
+                                <div class="testimonial__item-inner">
+                                    <div class="testimonial__item-content">
+                                        <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/GBxNmItmOXo?si=l-kMrEdSDYwtS1vb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial__item testimonial__item--style2">
+                                <div class="testimonial__item-inner">
+                                    <div class="testimonial__item-content">
+                                        <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/8RjHAcSMbhQ?si=2FfC3DoqgUF3DgdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-1 col-lg-4">
-                        <div class="pricing__item " data-aos="fade-up" data-aos-duration="1000">
-                            <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/8RjHAcSMbhQ?si=2FfC3DoqgUF3DgdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-1 col-lg-4">
-                        <div class="pricing__item" data-aos="fade-left" data-aos-duration="1000">
-                            <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/42qmAtmYkJc?si=oEvzE9FVb6yy7P80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                </div>
+                <div class="swiper-nav swiper-nav--style2">
+                    <button class="swiper-nav__btn active  swiper-nav__btn-prev testimonial__slider-prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="swiper-nav__btn swiper-nav__btn-next testimonial__slider-next"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
             </div>
         </div>
@@ -264,57 +282,10 @@
             <span class="pricing__shape-item pricing__shape-item--1"> <span></span> </span>
             <span class="pricing__shape-item pricing__shape-item--2"> <img src="{{ asset("assets/images/icon/1.png") }}" alt="shape-icon"></span>
         </div>
-    </section>
-    <!-- ===============>> video Tutorial 1 end here <<================= -->
+    </section> --}}
+    <!-- ===============>> video Tutorial end here <<================= -->
 
-    <!-- ===============>> video Tutorial 2 start here <<================= -->
-    <section class="testimonial padding-top padding-bottom-style2 bg-color">
-        <div class="container">
-            <div class="section-header section-header--style4">
-                <div class="section-header__content">
-                    <h6 class="mb-0">video <span>Tutorials </span></h6>
-                </div>
-            </div>
-        <div class="testimonial__wrapper">
-            <div class="testimonial__slider2 swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial__item testimonial__item--style2">
-                            <div class="testimonial__item-inner">
-                                <div class="testimonial__item-content">
-                                    <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/42qmAtmYkJc?si=oEvzE9FVb6yy7P80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial__item testimonial__item--style2">
-                            <div class="testimonial__item-inner">
-                                <div class="testimonial__item-content">
-                                    <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/GBxNmItmOXo?si=l-kMrEdSDYwtS1vb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial__item testimonial__item--style2">
-                            <div class="testimonial__item-inner">
-                                <div class="testimonial__item-content">
-                                    <iframe style="border-radius: 10px;" width="100%" height="205" src="https://www.youtube.com/embed/8RjHAcSMbhQ?si=2FfC3DoqgUF3DgdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-nav swiper-nav--style2">
-                <button class="swiper-nav__btn active  swiper-nav__btn-prev testimonial__slider-prev"><i class="fa-solid fa-angle-left"></i></button>
-                <button class="swiper-nav__btn swiper-nav__btn-next testimonial__slider-next"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- ===============>> video Tutorial 2 start here <<================= -->
+
 
     <!-- ===============>> Crypto Pricing start here <<================= -->
     <section class="blog padding-top padding-bottom">

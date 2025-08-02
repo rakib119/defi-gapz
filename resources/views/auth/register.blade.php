@@ -1,6 +1,6 @@
 @extends('layouts.fontend')
 @section('css')
-    <link rel="stylesheet" href="{{ asset('assets2/css/intlTelInput.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/intlTelInput.min.css') }}">
 @endsection
 @section('main-content')
     <!-- ===============>> account start here <<================= -->
@@ -22,8 +22,8 @@
                                 <div class="row g-4">
                                     <div class="col-12">
                                         <div>
-                                            <label for="first-name" class="form-label">First name</label>
-                                            <input class="form-control" name="name"  value="{{ old('name') }}" type="text" id="first-name" placeholder="Ex. Jhon">
+                                            <label for="name" class="form-label">Name <span class="text-danger fs-6">*</span> </label>
+                                            <input class="form-control" name="name"  value="{{ old('name') }}" type="text" id="name" placeholder="Ex. Jhon">
 
                                             @error('name')
                                                 <span class="my-2 text-danger"> {{ $message }}</span>
@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div>
-                                            <label for="account-email" class="form-label">Email</label>
+                                            <label for="account-email" class="form-label">Email <span class="text-danger fs-6">*</span></label>
                                             <input type="email" class="form-control" id="account-email" placeholder="Enter your email" name="email" value="{{ old('email') }}" required>
                                             @error('email')
                                                 <span class="my-2 text-danger "> {{ $message }}</span>
@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div>
-                                            <label for="phone" class="form-label">Mobile</label>
+                                            <label for="phone" class="form-label">Mobile <span class="text-danger fs-6">*</span></label>
                                             <input type="text" name="mobile" class="form-control" id="phone" placeholder="Enter your mobile" value="{{ old('mobile') }}" required >
 
                                             <span class="my-2 text-danger" id="valid-msg"></span>
@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-pass">
-                                            <label for="newPassword" class="form-label">Password</label>
+                                            <label for="newPassword" class="form-label">Password <span class="text-danger fs-6">*</span></label>
                                             <input type="password" name="password" class="form-control" id="newPassword"  placeholder="Password" autocomplete="current-password" required>
 
                                             <button type="button" id="btnToggle" class="form-pass__toggle"><i id="NewTogglePassword" class="fa fa-eye"></i></button>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-pass">
-                                            <label for="account-cpass" class="form-label">Confirm Password</label>
+                                            <label for="account-cpass" class="form-label">Confirm Password <span class="text-danger fs-6">*</span></label>
                                             <input type="password" name="password_confirmation" class="form-control" id="confirmPassword" placeholder="Re-type password" required>
 
                                             <button type="button" id="btnCToggle" class="form-pass__toggle"><i  id="eyeIcon2" class="fa fa-eye"></i></button>
@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="account__shape">
-            <span class="account__shape-item account__shape-item--1"><img src="{{ asset("assets2/images/contact/4.png")}}" alt="shape-icon"></span>
+            <span class="account__shape-item account__shape-item--1"><img src="{{ asset("assets/images/contact/4.png")}}" alt="shape-icon"></span>
         </div>
     </section>
     <!-- ===============>> account end here <<================= -->
@@ -123,7 +123,7 @@
 
 @endsection
 @section('javaScript')
-    <script src="{{ asset('assets2/js/intlTelInput.min.js') }}"></script>
+    <script src="{{ asset('assets/js/intlTelInput.min.js') }}"></script>
     <script>
         var countryData = window.intlTelInputGlobals.getCountryData(),
         input = document.querySelector("#phone"),
@@ -136,7 +136,7 @@
         let blockedCountries = ["af",'cn','np','ma','dz','eg','ws','gm','ye','bd'];
         // initialise plugin
         var iti = window.intlTelInput(input, {
-        utilsScript: "{{ asset('assets2/js/utils.js') }}",
+        utilsScript: "{{ asset('assets/js/utils.js') }}",
         preferredCountries: [],
         initialCountry: "auto",
         separateDialCode:true,

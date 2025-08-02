@@ -126,16 +126,16 @@
     @if (session()->has('popup_message'))
         <div class="custom-modal" id="popupNotification">
             <div class="custom-modal-content mt-5 center">
-                <div class="successIcon ">
+                <div class="successIcon" style="color: var(--brand-color);">
                     <i class="fas fa-bell"></i>
                 </div>
-                <div class="row  my-2" id="notification-body">
+                <div class="row my-2" id="notification-body">
                     <div class=" col-md-12 col-sm-12">
                         <h5>{{ session('popup_message') }}</h5>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button class="hideBtn text-center  btn btn-primary px-4">Got It</button>
+                    <button class="hideBtn text-center text-center trk-btn trk-btn-bg-sec px-4">Got It</button>
                 </div>
             </div>
         </div>
@@ -143,17 +143,17 @@
     @if (session('error'))
         <div class="custom-modal" id="successMessage">
             <div class="custom-modal-content mt-5 center">
-                <div class="errorIcon ">
+                <div class="errorIcon text-danger">
                     <i class="fa fa-solid fa-xmark"></i>
                 </div>
                 <div class="row  my-2">
                     <div class=" col-md-12 col-sm-12">
-                        <h4 class="text-center mb-3" style="color: var(--s-font-color);">Opps!</h4>
-                        <h5 class=" text-center text-capitalize" style="color: var(--s-font-color);">{{ session('error') }}</h5>
+                        <h6 class="text-center text-danger mb-3">Opps!</h6>
+                        <p class=" text-center text-danger text-capitalize">  {{ session('error') }}</p>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button id="okHide" class="text-center  btn btn-primary" style="width:100%">ok</button>
+                    <button id="okHide" class="text-center trk-btn trk-btn-danger text-white">ok</button>
                 </div>
             </div>
         </div>
@@ -161,18 +161,19 @@
 
     @if (session('success'))
         <div class="custom-modal" id="successMessage">
-            <div class="custom-modal-content mt-5 center">
-                <div class="successIcon ">
+            <div class="custom-modal-content mt-5 center" style="background:var(--tertiary-color);">
+                <div class="successIcon" style="color: var(--brand-color);" >
                     <i class="fa-solid fa-circle-check"></i>
                 </div>
                 <div class="row  my-2">
                     <div class=" col-md-12 col-sm-12">
-                        <h4 class="text-center mb-3">Congratulations</h4>
-                        <h5 class=" text-center">{{ session('success') }}</h5>
+                        <h6 class="text-center mb-3">Congratulations!</h6>
+                        <p class=" text-center">{{ session('success') }}</p>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button id="okHide" class="text-center  btn btn-primary"  style="width:100%">ok</button>
+                    {{-- <button id="okHide" class="text-center  btn btn-primary"  style="width:100%">ok</button> --}}
+                    <button id="okHide" class="trk-btn trk-btn-bg-sec">Ok</button>
                 </div>
             </div>
         </div>
@@ -264,13 +265,13 @@
                     </div>
                     <div class="footer__links-content">
                     <ul class="footer__linklist">
-                        <li class="footer__linklist-item"> <a href="about.html">About Us</a>
+                        <li class="footer__linklist-item"> <a href="{{route('about-us')}}">About Us</a>
                         </li>
-                        <li class="footer__linklist-item"> <a href="team.html">Teams</a>
+                        <li class="footer__linklist-item"> <a href="{{route('download_center')}}">Teams</a>
                         </li>
-                        <li class="footer__linklist-item"> <a href="service.html">Services</a> </li>
-                        <li class="footer__linklist-item"> <a href="#">Features</a>
-                        </li>
+                        <li class="footer__linklist-item"> <a href="{{route('download_center')}}">Download Center</a> </li>
+                        <li class="footer__linklist-item"> <a href="{{route('deposit_view')}}">Deposit</a></li>
+
                     </ul>
                     </div>
                 </div>
@@ -283,12 +284,13 @@
                     </div>
                     <div class="footer__links-content">
                     <ul class="footer__linklist">
-                        <li class="footer__linklist-item"> <a href="#">Terms & Conditions</a>
+                        <li class="footer__linklist-item"> <a href="{{route('t&c')}}">Terms & Conditions</a>
                         </li>
-                        <li class="footer__linklist-item"> <a href="#">Privacy Policy</a>
+                        <li class="footer__linklist-item"> <a href="{{route('privacy_policy')}}">Privacy Policy</a>
                         </li>
-                        <li class="footer__linklist-item"> <a href="#">FAQs</a></li>
-                        <li class="footer__linklist-item"> <a href="#">Support Center</a> </li>
+                        <li class="footer__linklist-item"> <a href="{{route('contact-us')}}">Contact Us</a>
+                        </li>
+                        <li class="footer__linklist-item"> <a href="{{ route('password.request') }}">Forgot Password</a> </li>
                     </ul>
                     </div>
                 </div>
@@ -297,17 +299,15 @@
                 <div class="col-md-2 col-sm-4">
                 <div class="footer__links">
                     <div class="footer__links-tittle">
-                    <h6>Company</h6>
+                    <h6>My Accounts</h6>
                     </div>
                     <div class="footer__links-content">
                     <ul class="footer__linklist">
-                        <li class="footer__linklist-item"> <a href="#">Careers</a>
-                        </li>
-                        <li class="footer__linklist-item"> <a href="#">Updates</a>
-                        </li>
-                        <li class="footer__linklist-item"> <a href="#">Job</a> </li>
-                        <li class="footer__linklist-item"> <a href="#">Announce</a>
-                        </li>
+                        <li class="footer__linklist-item"> <a href="{{ route('my_team') }}">My Team</a></li>
+                        <li class="footer__linklist-item"> <a href="{{ route('team_income') }}">Team Income</a></li>
+                        <li class="footer__linklist-item"> <a href="{{ route('deposit_records') }}">Deposit Records</a></li>
+                        <li class="footer__linklist-item"> <a href="{{ route('withdrawal_records') }}">Withdrawal Records</a></li>
+
                     </ul>
                     </div>
                 </div>
