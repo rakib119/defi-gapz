@@ -26,7 +26,7 @@ class FrontendController extends Controller
     {
         $prices = Http::withHeaders([
             'content-type' => 'application/json',
-            'x-api-key' => '121ee80b-370a-42c3-a57c-1c6899423d3b',
+            'x-api-key' => '2c28eba5-1b99-46c6-8879-73ed635f548e',
         ])->post('https://api.livecoinwatch.com/coins/list', [
             'currency' => 'USD',
             'sort' => 'rank',

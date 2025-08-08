@@ -42,7 +42,7 @@ class WithdrawNotification extends Notification
     {
 
         return (new MailMessage)
-            ->subject('Withdrawal Request Pending - One Top Trade (OTT)')
+            ->subject('Withdrawal Request Pending - Defi Gapz')
             ->view('email.withdraw', [
                 'withdrawal_address' => auth()->user()->wallet_address,
                 'transaction_id' => session()->get('transaction_id'),

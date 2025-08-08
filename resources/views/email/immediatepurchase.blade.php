@@ -20,10 +20,10 @@
             </p>
             <a href="{{route('contact-us')}}" target="_blank"><span
                     style='color:#E9B434'>{{route('contact-us')}}</span></a></span></p>
-            <p style="font-size:0.9em;">Regards,<br /> OTT Team.</p>
+            <p style="font-size:0.9em;">Regards,<br /> Defi Gapz Team.</p>
             <hr style="border:none;border-top:1px solid #eee" />
             <div style="float:right;padding:8px 0;color:#aaa;font-size:0.8em;line-height:1;font-weight:300">
-                <p>OTT Team.</p>
+                <p>Defi Gapz Team.</p>
                 <p>Automated message. Please do not reply.</p>
             </div>
         </div>

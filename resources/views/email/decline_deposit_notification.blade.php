@@ -889,7 +889,7 @@ w\:* {behavior:url(#default#VML);}
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>I am writing to inform you that your recent deposit request <span style="color:#fd961a;">${{ number_format($amount, 2) }} </span>has been declined by <span style="color:#fd961a;">One Top Trade</span>. Unfortunately, we were unable to process your request as it was not completed within 30 minutes of submission.
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>I am writing to inform you that your recent deposit request <span style="color:#fd961a;">${{ number_format($amount, 2) }} </span>has been declined by <span style="color:#fd961a;">Defi Gapz</span>. Unfortunately, we were unable to process your request as it was not completed within 30 minutes of submission.
                                                     </p>
                                                 </td>
                                             </tr>
@@ -913,7 +913,7 @@ w\:* {behavior:url(#default#VML);}
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>Thank you for choosing One Top Trade as your trading partner.</span>
+                                                            "Times New Roman";color:black'>Thank you for choosing Defi Gapz as your trading partner.</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -929,7 +929,7 @@ w\:* {behavior:url(#default#VML);}
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>One Top Trade <span style="color:#fd961a;">(OTT)</span></span>
+                                                            "Times New Roman";color:black'> <span style="color:#fd961a;">Defi Gapz</span></span>
                                                     </p>
                                                 </td>
                                             </tr>

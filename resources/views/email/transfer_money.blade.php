@@ -499,7 +499,7 @@ break-word'>
                             <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
                                 <td style='padding:15.0pt 22.5pt 15.0pt 22.5pt'>
                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-    "Times New Roman";color:#865474'>Thank you for choosing&nbsp;<span style="color:#fd961a;">(OTT)</span></span></b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#865474'>Thank you for choosing&nbsp;<span style="color:#fd961a;">(Defi Gapz)</span></span></b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
     "Times New Roman";color:#865474'>
 
                                         </span></p>

@@ -284,7 +284,7 @@
                                                                 <p class=MsoNormal
                                                                     style='margin-bottom:0in;line-height:15.0pt'><span
                                                                         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-        "Times New Roman";color:black'>This is Shatakshi from the Refund Response Team at <span style="color:#fd961a;">(OTT)</span>
+        "Times New Roman";color:black'>This is Shatakshi from the Refund Response Team at <span style="color:#fd961a;">Defi Gapz</span>
                                                                     </span></p>
                                                                 <p class=MsoNormal
                                                                     style='margin-bottom:0in;line-height:15.0pt'><span

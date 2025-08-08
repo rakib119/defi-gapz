@@ -50,7 +50,7 @@ class MineController extends Controller
             $request->validate([
                 'wallet_address' => 'required|max:200|unique:users'
             ],[
-                'wallet_address.unique' =>'Sorry ! Wallet address you entered is already used to  an another OTT account.'
+                'wallet_address.unique' =>'Sorry ! Wallet address you entered is already used to  an another Defi Gapz account.'
             ]);
             $user = User::where('id', auth()->id())->first();
             $user->wallet_address = $request->wallet_address;

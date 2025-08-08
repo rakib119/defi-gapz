@@ -197,7 +197,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>Congratulations! We are pleased to inform you that your recent withdrawal request <span style="color:#fd961a;">${{$withdrawal_amount}}</span> from  One Top Trade <span style="color:#fd961a;">(OTT)</span> has been successfully processed. The funds have been transferred to your designated account and should be reflected in your account balance.</span>
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>Congratulations! We are pleased to inform you that your recent withdrawal request <span style="color:#fd961a;">${{$withdrawal_amount}}</span> from <span style="color:#fd961a;">Defi Gapz</span> has been successfully processed. The funds have been transferred to your designated account and should be reflected in your account balance.</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -229,7 +229,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>One Top Trade <span style="color:#fd961a;">(OTT)</span> Team</span>
+                                                            "Times New Roman";color:black'>Defi Gapz Team</span>
                                                     </p>
                                                 </td>
                                             </tr>

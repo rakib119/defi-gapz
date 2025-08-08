@@ -57,8 +57,8 @@
 
                                     <div class="col-12">
                                         <div>
-                                            <label for="reference" class="form-label">Reference</label>
-                                            <input type="text" name="reference" class="form-control" id="reference" placeholder="Enter your email" value="{{ isset($_GET['ref']) ? $_GET['ref'] : '' }}">
+                                            <label for="reference" class="form-label">Reference <span class="fs-6">(If any)</span></label>
+                                            <input type="text" name="reference" class="form-control" id="reference" placeholder="Enter your Reference Id" value="{{ isset($_GET['ref']) ? $_GET['ref'] : '' }}">
                                             @error('reference')
                                                 <span class="my-2 text-danger "> {{ $message }}</span>
                                             @enderror
@@ -107,7 +107,7 @@
 
                             </form>
                             <div class="account__switch">
-                                <p>Don’t have an account yet? <a href="{{ route('login') }}">Login</a></p>
+                                <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
                             </div>
                         </div>
                     </div>

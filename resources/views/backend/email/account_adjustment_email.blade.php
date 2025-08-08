@@ -211,7 +211,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>One Top Trade <span style="color:#fd961a;">(OTT)</span> .</span>
+                                                            "Times New Roman";color:black'> <span style="color:#fd961a;">Defi Gapz</span> .</span>
                                                     </p>
                                                 </td>
                                             </tr>

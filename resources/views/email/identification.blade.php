@@ -8,7 +8,7 @@
     <meta name=Generator content="Microsoft Word 15">
     <meta name=Originator content="Microsoft Word 15">
     <link rel=File-List href="Withdrawal%20Successful_files/filelist.xml">
-    <link rel=Edit-Time-Data href="Withdrawal%20Successful_files/editdata.mso"> 
+    <link rel=Edit-Time-Data href="Withdrawal%20Successful_files/editdata.mso">
     <style>
         <!--
         /* Font Definitions */
@@ -305,7 +305,7 @@
                                                                     style='margin-bottom:0in;line-height:15.0pt'><span
                                                                         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
         "Times New Roman";color:black'> You are receiving this email because of your identity is verified in order to
-                                                                        access benefits and services with <span style="color:#fd961a;">(OTT)</span>.
+                                                                        access benefits and services with <span style="color:#fd961a;">Defi Gapz</span>.
                                                                         Now you are bound free to transaction any amount
                                                                         of your fund.</p>
                                                                 <p class=MsoNormal
@@ -317,7 +317,7 @@
                                                                 <p class=MsoNormal
                                                                     style='margin-bottom:0in;line-height:15.0pt'>
                                                                     <i><span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-        "Times New Roman";color:black'>Thank you for choosing <span style="color:#fd961a;">(OTT)</span>.&nbsp;</span></i><span style='font-size:10.5pt;font-family:
+        "Times New Roman";color:black'>Thank you for choosing <span style="color:#fd961a;">Defi Gapz</span>.&nbsp;</span></i><span style='font-size:10.5pt;font-family:
         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
         color:black'>
                                                                         <o:p></o:p>
@@ -422,7 +422,7 @@
                                                             style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
                                                             <td style='padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                                 <h2 style="text-align: center"> Start your journey with
-                                                                    <span style="color:#fd961a;">(OTT)</span>.</h2>
+                                                                    <span style="color:#fd961a;">Defi Gapz</span>.</h2>
                                                                 <o:p></o:p>
                                                             </td>
                                                         </tr>

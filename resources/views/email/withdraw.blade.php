@@ -195,7 +195,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>We hope this email finds you well. We would like to inform you that your recent withdrawal request <span style="color:#fd961a;">${{$withdrawal_amount}}</span>  from One Top Trade <span style="color:#fd961a;">(OTT)</span>  is currently pending. Our team is processing your request and we will notify you once the transaction has been completed. </span>
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>We hope this email finds you well. We would like to inform you that your recent withdrawal request <span style="color:#fd961a;">${{$withdrawal_amount}}</span>  from <span style="color:#fd961a;">Defi Gapz</span>  is currently pending. Our team is processing your request and we will notify you once the transaction has been completed. </span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -211,7 +211,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>Thank you for choosing One Top Trade  <span style="color:#fd961a;">(OTT)</span>.</span>
+                                                            "Times New Roman";color:black'>Thank you for choosing <span style="color:#fd961a;">Defi Gapz</span>.</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -227,7 +227,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>One Top Trade <span style="color:#fd961a;">(OTT)</span> .</span>
+                                                            "Times New Roman";color:black'>Defi Gapz.</span>
                                                     </p>
                                                 </td>
                                             </tr>

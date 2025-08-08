@@ -202,7 +202,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>This is to notify you that a deposit for the amount of <span style="color:#fd961a;">${{ number_format($amount, 2) }} </span> has been successfully credited to your account<span style="color:#fd961a;">(OTT)</span>. Please check your account statement to ensure the deposit has been made.</span>, our premier cryptocurrency trading platform.</span>
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>This is to notify you that a deposit for the amount of <span style="color:#fd961a;">${{ number_format($amount, 2) }} </span> has been successfully credited to your account<span style="color:#fd961a;">(Defi Gapz)</span>. Please check your account statement to ensure the deposit has been made.</span>, our premier cryptocurrency trading platform.</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -226,7 +226,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>One Top Trade <span style="color:#fd961a;">(OTT)</span> Team</span>
+                                                            "Times New Roman";color:black'> <span style="color:#fd961a;">Defi Gapz</span> Team</span>
                                                     </p>
                                                 </td>
                                             </tr>

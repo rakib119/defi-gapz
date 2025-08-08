@@ -41,7 +41,7 @@ class DeclineDepositeNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Declined Deposit Request for One Top Trade')
+            ->subject('Declined Deposit Request for Defi Gapz')
             ->view('email.decline_deposit_notification', [
                 'amount' => session()->get('deposit_amount'),
                 'name' => session()->get('s_user_name'),
