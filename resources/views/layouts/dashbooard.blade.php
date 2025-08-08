@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ env('APP_NAME') }}- Cryptocurrency trading Platform -Dashboard</title>
     <!-- Favicon Icon -->
-    <link rel="icon" href="{{ asset('assets/img/favicon.jpg') }}">
+    <link rel="icon" href="{{ asset("assets/images/favicon.png") }}">
     <link href="{{ asset('dashboard/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}"
         rel="stylesheet" type="text/css" />
     <link href="{{ asset('dashboard/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"

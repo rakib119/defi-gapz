@@ -109,6 +109,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="partner__item">
+                                <div class="partner__item-inner">
+                                    <img src="{{ asset("assets/images/partner/light/6.png") }}" alt="partner logo" class="dark">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
