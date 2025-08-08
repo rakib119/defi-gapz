@@ -23,7 +23,7 @@ class TransactionController extends Controller
     {
         $charge = ServiceFees::where('transaction_type',1)->first('fees');
         return view('frontend.deposit', [
-            'service_charge'=> $charge->fees ,
+            'service_charge'=> $charge->fees*1 ,
             'previous_deposit' => InTransition::where(['transaction_type' => 'deposit', ['status', 0], 'uid' => auth()->user()->uid])->orderBy('id', 'DESC')->first(['transaction_fee','transaction_amount','subtotal']),
         ]);
     }
