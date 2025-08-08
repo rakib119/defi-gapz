@@ -64,7 +64,7 @@
                                         <td style='width:25%'> {{ $data->created_at->format('d M Y') }} </td>
                                         <td style='width:25%'>{{ $data->transaction_id }} </td>
                                         <td style='width:25%'>${{ $data->transaction_amount }}</td>
-                                        <td style='width:25%'>${{ $data->profit }}</td>
+                                        <td style='width:25%'>+${{ $data->profit }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

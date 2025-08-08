@@ -234,11 +234,11 @@
                         </tr>
                         <tr>
                             <td class="borderless" style="width: 50%" align="left">Trading Fees :</td>
-                            <td class="borderless" align="center">$<span id="tradingFees"></span></td>
+                            <td class="borderless" align="center">-$<span id="tradingFees"></span></td>
                         </tr>
                         <tr>
                             <td class="borderless" style="width: 50%" align="left">Realized PNL (USDT) :</td>
-                            <td class="borderless" align="center">$<span id="Profit"></span></td>
+                            <td class="borderless" align="center">+$<span id="Profit"></span></td>
                         </tr>
                     </table>
                     <div class="text-center mt-4 mt-3">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-4 mt-3">
-                        <button id="ok_hide" class="text-center trk-btn trk-btn-danger text-white mt-25" >Ok</button>
+                        <button id="ok_hide" class="text-center trk-btn trk-btn-danger text-white mt-25" style="width:100%">Ok</button>
                     </div>
                 </div>
             </div>

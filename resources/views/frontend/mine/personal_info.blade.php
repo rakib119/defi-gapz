@@ -84,7 +84,7 @@
                                     <div class="p-2">
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h6 class="caption-text"> Trc20 Wallet Address</h6>
+                                                <h6 class="caption-text"> Withdrawal Wallet Address</h6>
                                                 @error('wallet_address')
                                                     <span class="text-danger">{{$message}}</span>
                                                 @enderror
@@ -99,7 +99,7 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h6 class="modal-title fs-5 ">Add Wallet Address</h6>
+                                                    <h6 class="modal-title fs-5 ">Add Withdrawal Wallet Address</h6>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
@@ -108,8 +108,8 @@
                                                         <div class="row g-4 mb-4">
                                                             <div class="col-12">
                                                                 <div>
-                                                                    <label> Trc20 wallet Address</label>
-                                                                    <input type="text" placeholder="Trc20 wallet Address" name="wallet_address" class="form-control" value="{{ $auth->wallet_address }}" required>
+                                                                    <label > USTD(Trc20) wallet Address</label>
+                                                                    <input type="text" name="wallet_address" class="form-control" value="{{ $auth->wallet_address }}" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">

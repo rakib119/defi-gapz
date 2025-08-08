@@ -230,8 +230,8 @@ class CompetitionController extends Controller
     public function competition_statistics()
     {
         return view('frontend.statistics', [
-            'account_transaction' => AccountTransaction::where(['uid' => auth()->user()->uid, 'transaction_type' => 5])->get(),
-            'competitionTransitions' => competitionTransitionDetail::where(['uid' => auth()->user()->uid])->get(),
+            'account_transaction' => AccountTransaction::where(['uid' => auth()->user()->uid, 'transaction_type' => 5])->orderby('id','desc')->get(),
+            'competitionTransitions' => competitionTransitionDetail::where(['uid' => auth()->user()->uid])->orderby('id','desc')->get(),
         ]);
     }
 }

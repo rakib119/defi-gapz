@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button class="hideBtn text-center text-center trk-btn trk-btn-bg-sec px-4">Got It</button>
+                    <button class="hideBtn text-center text-center trk-btn trk-btn-bg-sec px-4" style="width:100%">Got It</button>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button id="okHide" class="text-center trk-btn trk-btn-danger text-white">ok</button>
+                    <button id="okHide" class="text-center trk-btn trk-btn-danger text-white" style="width:100%">ok</button>
                 </div>
             </div>
         </div>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="text-center mt-4 mt-3">
                     {{-- <button id="okHide" class="text-center  btn btn-primary"  style="width:100%">ok</button> --}}
-                    <button id="okHide" class="trk-btn trk-btn-bg-sec">Ok</button>
+                    <button id="okHide" class="trk-btn trk-btn-bg-sec" style="width:100%">Ok</button>
                 </div>
             </div>
         </div>
