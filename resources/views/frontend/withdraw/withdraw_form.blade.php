@@ -2,13 +2,15 @@
 @section('main-content')
     <section class="account padding-top padding-bottom sec-bg-color2">
         <div class="container">
+            <div class="section-header-2 d-md-flex align-items-center justify-content-between">
+                <div class="section-header section-header--max50">
+                    <h6 class="mb-10 mt-minus-5"><span>Withdrawal</span> {{ session()->get('withdrawal_amount') ?' Confirmation':  ' Now'}}</h6>
+                </div>
+            </div>
             <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
                 <div class="row g-4">
                     <div class="col-lg-12">
                         <div class="account__content account__content--style1">
-                            <div class="account__header">
-                                <h6><span>{{ session()->get('withdrawal_amount') ?'Withdrawal Confirmation':  'Withdraw  Now'}}</span></h6>
-                            </div>
                             @if (session()->get('withdraw_success'))
                                 <h6 class="text-center py-2">{{ session()->get('withdraw_success') }} </h6>
                             @endif
@@ -18,7 +20,7 @@
                                     <div class="row g-4">
                                         <div class="col-12">
                                             <div>
-                                                <label class="form-label">Withdrawal Amount <span class="text-danger">*</span></label>
+                                                <label>Withdrawal Amount <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" value="${{ session()->get('withdrawal_amount') }}"  readonly>
                                             </div>
                                             @error('withdrawal_amount')
@@ -27,19 +29,19 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="serviceCharge" class="form-label">Service Charge <span class="text-danger">*</span></label>
+                                                <label for="serviceCharge">Service Charge <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" value="${{ session()->get('service_fee') }}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label class="form-label">Total Withdrawal Amount <span class="text-danger">*</span></label>
+                                                <label>Total Withdrawal Amount <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" value="${{ session()->get('total_withdrawal_amount') }}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="otp" class="form-label">OTP <span class="text-danger">*</span></label>
+                                                <label for="otp">OTP <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" id="otp" placeholder="Enter OTP" name='otp' value=''>
                                                 {{-- {{session()->get('otp')}} --}}
                                             </div>
@@ -64,8 +66,8 @@
                                     <div class="row g-4">
                                         <div class="col-12">
                                             <div>
-                                                <label for="withdrawal_method" class="form-label">Withdrawal Method <span class="text-danger">*</span></label>
-                                                <select required name="withdrawal_method" class="form-control">
+                                                <label for="withdrawal_method">Withdrawal Method <span class="text-danger">*</span></label>
+                                                <select required name="withdrawal_method" class="form-control" id="withdrawal_method">
                                                     @php
                                                         $methods = DB::table('withdrawal_methods')->where('status',1)->get(['method_id','method']);
                                                         $total_method = count( $methods );
@@ -82,7 +84,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="withdrawal_amount" class="form-label">Withdrawal Amount <span class="text-danger">*</span></label>
+                                                <label for="withdrawal_amount">Withdrawal Amount <span class="text-danger">*</span></label>
                                                 <input class="form-control" min="10" value="{{ old('withdrawal_amount') ? old('withdrawal_amount') : 0 }}"  type="number" placeholder="Withdrawal Amount"  name='withdrawal_amount' id='withdrawal_amount' required>
                                                 <p class="text-capitalize">Withdrawable Amount: ${{ $balance - $freeze_deposit }} </p>
                                             </div>
@@ -92,7 +94,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-pass">
-                                                <label for="transactionPassword" class="form-label">Transaction Password <span class="text-danger">*</span></label>
+                                                <label for="transactionPassword">Transaction Password <span class="text-danger">*</span></label>
                                                 <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Transaction Password" required autocomplete="off">
 
                                                 <button type="button" id="togglePassword" class="form-pass__toggle"><i  id="eyeIcon" class="fa fa-eye"></i></button>

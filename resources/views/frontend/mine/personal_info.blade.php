@@ -12,15 +12,13 @@
                     <div class="col-sm-12 col-lg-12">
                         <div class="team__item team__item--shape">
                             <div class="d-flex flex-column">
-                                <div class="my-5">
-                                    <h6 class="text-danger text-center">Note : Be careful and conscious while adding your payment method is not editable further in case of  any missing.</h6>
+                                <div class="my-5 text-center">
+                                    <span class="custom-badge bg-danger">Caution⚠️ Be careful and conscious while adding your payment method is not editable further in case of  any missing.</span>
                                 </div>
                                 @if (!$auth->name)
-                                    <h6 class="ml-2">Name:</h6>
-                                    <div class="p-2">
-                                        <div class="d-flex justify-content-between">
-                                            <p style="font-size: 20px"> {{ $auth->name }}</p>
-
+                                <div class="p-2">
+                                    <div class="d-flex justify-content-between">
+                                            <h6 class="caption-text ml-2">Name: <span class="caption-inner">{{ $auth->name }}</span></h6>
                                             <button type="button" class="trk-btn trk-btn--border trk-btn--secondary" data-bs-toggle="modal" data-bs-target="#changeName">Modify</button>
                                         </div>
                                     </div>
@@ -61,22 +59,23 @@
                                 @else
                                     <div class="d-flex flex-column">
                                         <div class="p-2">
-                                            <h6>Name:</h6>
-                                            <div class="d-flex justify-content-between">
+                                            <p class="caption-text">Name: <span class="caption-inner">{{ $auth->name }}</span></p>
+                                            {{-- <div class="d-flex justify-content-between">
                                                 <div>
-                                                    <p style="font-size: 20px"> {{ $auth->name }}</p>
+                                                    <p> {{ $auth->name }}</p>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column">
                                         <div class="p-2">
-                                            <h6>Email:</h6>
+                                            <p class="caption-text">Email: <span class="caption-inner">{{ $auth->email }}</span></p>
+                                            {{-- <h6>Email:</h6>
                                             <div class="d-flex justify-content-between">
                                                 <div>
-                                                    <p style="font-size: 20px"> {{ $auth->email }}</p>
+                                                    <p> {{ $auth->email }}</p>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
 
@@ -85,9 +84,9 @@
                                     <div class="p-2">
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h6> Trc20 Wallet Address</h6>
+                                                <h6 class="caption-text"> Trc20 Wallet Address</h6>
                                                 @error('wallet_address')
-                                                    <p class="text-danger">{{$message}}</p>
+                                                    <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>
                                             <div>
@@ -100,7 +99,7 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h6 class="modal-title fs-5">Add Wallet Address</h6>
+                                                    <h6 class="modal-title fs-5 ">Add Wallet Address</h6>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
@@ -109,7 +108,7 @@
                                                         <div class="row g-4 mb-4">
                                                             <div class="col-12">
                                                                 <div>
-                                                                    <label for="first-name" class="form-label"> Trc20 wallet Address</label>
+                                                                    <label> Trc20 wallet Address</label>
                                                                     <input type="text" placeholder="Trc20 wallet Address" name="wallet_address" class="form-control" value="{{ $auth->wallet_address }}" required>
                                                                 </div>
                                                             </div>
@@ -129,19 +128,14 @@
                                 @else
                                     <div class="d-flex flex-column">
                                         <div class="p-2">
-                                            <h6>Trc20 Wallet Address:</h6>
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <p style="font-size: 20px"> {{ $auth->wallet_address }}</p>
-                                                </div>
-                                            </div>
+                                            <h6 class="caption-text">Trc20 Wallet Address: <span class="caption-inner">{{ $auth->wallet_address }}</span></h6>
                                         </div>
                                     </div>
                                 @endif
                                 @if (!$auth->bank_account_no)
                                     <div class="p-2">
                                         <div class="d-flex justify-content-between">
-                                            <h6>Bank Account No:</h6>
+                                            <h6 class="caption-text">Bank Account No:</h6>
                                             <button type="button" class="trk-btn trk-btn--border trk-btn--secondary" data-bs-toggle="modal" data-bs-target="#addBankAccountNo">Add
                                                 Details</button>
                                         </div>
@@ -203,35 +197,25 @@
                                 @else
                                     <div class="d-flex flex-column">
                                         <div class="p-2">
-                                            <h6>Bank Account No:</h6>
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <p style="font-size: 20px"> {{ $auth->bank_account_no }}</p>
-                                                </div>
-                                            </div>
+                                            <h6 class="caption-text">Bank Account No: <span class="caption-inner">{{ $auth->bank_account_no }}</span></h6>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column">
                                         <div class="p-2">
-                                            <h6>Bank Name:</h6>
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <p style="font-size: 20px"> {{ $auth->bank_name }}</p>
-                                                </div>
-                                            </div>
+                                            <h6 class="caption-text">Bank Name: <span class="caption-inner">{{ $auth->bank_name }}</span></h6>
+
                                         </div>
                                     </div>
                                 @endif
                                 <div class="d-flex flex-column">
                                     <div class="p-2">
-                                        <h6>Mobile Number:</h6>
-                                        <p style="font-size: 20px"> {{ $auth->mobile }}</p>
+                                        <h6 class="caption-text">Mobile Number: <span class="caption-inner">{{ $auth->mobile }}</span></h6>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <div class="p-2">
                                         <div class="d-flex justify-content-between">
-                                            <h6>Login Password</h6>
+                                            <h6 class="caption-text">Login Password</h6>
                                             <a href="{{ route('password.request') }}" class="trk-btn trk-btn--border trk-btn--secondary">Modify</a>
                                         </div>
                                     </div>
@@ -239,7 +223,7 @@
                                 <div class="d-flex flex-column">
                                     <div class="p-2">
                                         <div class="d-flex justify-content-between">
-                                            <h6>Transaction Password</h6>
+                                            <h6 class="caption-text">Transaction Password</h6>
                                             @if ($auth->transaction_password)
                                                 <a href="{{ route('update_trans_pass') }}" class="trk-btn trk-btn--border trk-btn--secondary">Modify</a>
                                             @else
@@ -250,12 +234,8 @@
                                 </div>
                                 <div class="d-flex flex-column">
                                     <div class="p-2">
-                                        <h6>UID:</h6>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <p style="font-size: 20px"> {{ $auth->uid }}</p>
-                                            </div>
-                                        </div>
+                                        <h6 class="caption-text">UID: <span class="caption-inner">{{ $auth->uid }}</span></h6>
+
                                     </div>
                                 </div>
                             </div>

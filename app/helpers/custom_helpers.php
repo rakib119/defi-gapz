@@ -145,7 +145,7 @@ function freeze_deposit_amount($uid=null)
     }
     $deposit =  DB::table('account_transactions')->where('uid',$uid)->where('transaction_type',1)->first('created_at');
 
-    $deposit_time = 0;
+    $deposit_time = $total_deposit=0;
     if($deposit)
     {
         $deposit_date=Carbon::parse($deposit->created_at);
