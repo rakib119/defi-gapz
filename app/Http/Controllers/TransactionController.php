@@ -41,7 +41,7 @@ class TransactionController extends Controller
             'transaction_amount.numeric' => 'Only Number is allowed',
         ]);
         if(!auth()->user()->wallet_address){
-            return back()->with('error', 'Please set your Wallet Address');
+            return back()->with('error', 'Opps!**Ok**please set your wallet address first!##Go to mine→personal information→set your withdrawal wallet adress USDT(Trc20)');
         }
         $transaction_amount = $request->transaction_amount;
         $transaction_fee = ServiceFees::where('transaction_type', 1)->first()->fees;

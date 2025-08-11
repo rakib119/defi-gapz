@@ -147,7 +147,7 @@ class MineController extends Controller
         ]);
         if ($request->withdrawal_method == 0) {
             if (!$user->wallet_address) {
-                return back()->with('error', 'Opps!**Ok**please set your wallet address first!##Go to mine -> personal information -> set your withdrawal wallet adress USDT(Trc20)');
+                return back()->with('error', 'Opps!**Ok**please set your wallet address first!##Go to mine→personal information→set your withdrawal wallet adress USDT(Trc20)');
             } else {
                 $status = 1;
             }

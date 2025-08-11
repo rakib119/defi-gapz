@@ -253,6 +253,7 @@
                     </div>
                     <div class="row my-3">
                         <div class=" col-md-12 col-sm-12">
+                            <h6 class="text-center mb-15 text-danger"  style="font-size:16px" id="errMsgCaption"></h6>
                             <p class="text-center mb-15 text-danger"  style="font-size:16px" id="errMsg"></p>
                         </div>
                     </div>
@@ -325,8 +326,13 @@
 
                         setTimeout(function() {
                             searchingDiv.hide();
-                            immediateCompititionDiv.show();
-                            startCountdown();
+                            var advNo = $('#advNo').html();
+                            if (advNo!="") {
+                                immediateCompititionDiv.show();
+                                startCountdown();
+                            }else{
+                                immediateCompititionDiv.hide();
+                            }
                         }, time);
 
                         let countdownDuration = 5 * 60; // 5 minutes in seconds
@@ -401,7 +407,8 @@
                                 }
                                 else
                                 {
-                                    $('#errMsg').html('Something went wrong. Please try again later.');
+                                     $('#errMsgCaption').html('High Demand Alert !');
+                                    $('#errMsg').html('Sorry for the wait! Our AI is currently handling a lot of requests. Please try again in a moment—we appreciate your patience!');
                                     searchingDiv.hide();
                                     immediateCompititionDiv.hide();
                                     Congratulations.hide();
@@ -433,14 +440,27 @@
                             task: task
                         },
                         success: function(data) {
-                            console.log(data);
-
                             $('#orderNo').html(data.order_no);
                             $('#orderAmount').html(data.transaction_amount);
                             $('#Profit').html(data.profit);
                             $('#tradingFees').html(data.trading_fees);
                             immediateCompititionDiv.hide();
-                            Congratulations.show();
+                            var orderNo =  $('#orderNo').html();
+                            if (orderNo) {
+                                Congratulations.show();
+                            }
+                            else
+                            {
+                                $('#errMsgCaption').html('High Demand Alert !');
+                                $('#errMsg').html('Sorry for the wait! Our AI is currently handling a lot of requests. Please try again in a moment—we appreciate your patience!');
+                                searchingDiv.hide();
+                                immediateCompititionDiv.hide();
+                                Congratulations.hide();
+                                errorSection.show();
+                                clearInterval(countdownInterval);
+                                compititionForOrderBtn.show();
+                                return;
+                            }
                         },
                     });
                 });

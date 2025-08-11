@@ -258,7 +258,7 @@ break-word'>
                                                     <![if !vml]>
                                                     <span style='mso-ignore:vglayout'>
                                                         <img src="{{ asset('assets/img/logo-dark.png') }}" border=0
-                                                            width=121 height=50 v:shapes="Picture_x0020_6">
+                                                            height=50 v:shapes="Picture_x0020_6">
                                                     </span>
                                                     <![endif]>
                                                 </span></a><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:"Times New Roman";

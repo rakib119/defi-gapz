@@ -205,7 +205,7 @@
             o:title=""/>
           </v:shape><![endif]-->
                                                                                         <![if !vml]><img border=0
-                                                                                            width=121 height=50
+                                                                                             height=50
                                                                                             src="{{ asset('assets/img/logo-dark.png') }}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                                         <![endif]>

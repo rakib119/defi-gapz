@@ -382,7 +382,7 @@
                                                                                         <p class=MsoNormal
                                                                                             style='margin-bottom:0in;line-height:15.0pt'>
                                                                                             <span style='font-size:8.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-            "Times New Roman";color:black'><img border=0 width=121 height=50 src="{{asset('assets/img/logo-dark.png')}}">
+            "Times New Roman";color:black'><img border=0  height=50 src="{{asset('assets/img/logo-dark.png')}}">
                                                                                                 <o:p></o:p>
                                                                                             </span>
                                                                                         </p>

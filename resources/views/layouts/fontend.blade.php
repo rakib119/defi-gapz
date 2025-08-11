@@ -136,7 +136,7 @@
     @endif
     @if (session('error'))
         @php
-            $msg = session('success');
+            $msg = session('error');
             $msg_array = explode('**', $msg);
             $button_name = 'Ok';
             $title = 'Opps!';
@@ -159,7 +159,6 @@
                 <div class="row  my-2">
                     <div class=" col-md-12 col-sm-12">
                         <h6 class="text-center text-danger mb-3">{{$title}}</h6>
-                        <p class=" text-center text-danger text-capitalize">  {{ session('error') }}</p>
                     </div>
                     <div class=" col-md-12 col-sm-12">
                         <div style="padding-left: 4px;">
@@ -211,7 +210,7 @@
                             <table style="text-align: left;">
                                 @foreach ($msg_list as $message)
                                     <tr>
-                                        <td class="borderless" style="width: 95%"><strong>{{$message}}</strong></td>
+                                        <td class="borderless">{{$message}}</td>
                                     </tr>
                                 @endforeach
                             </table>
