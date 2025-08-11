@@ -33,7 +33,6 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12">
                         <div class="card-body">
-                            {{-- <h6 class="card-title text-left">Note: you are requested to transfer (deposited amount + charge) by scanning QR code or copying the address Tether (TRC20) </h6> --}}
                             <div class="mt-3 text-left">
                                 <h6 class="text_color-secondary text-center"> Payment instructions </h6>
                                 <p class="mb-15">Transfer <span class="text_color-secondary"> {{$previous_deposit->subtotal}}</span> by scanning the QR code or copying <span class="text_color-secondary">(Tether)TRC20</span> wallet address.</p>
@@ -162,7 +161,7 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
         function copy_Share_Button() {
-            var walletAddress = "TRWw2cD2v2mvxheskSLCpHenaKsn8RWKZW";
+            var walletAddress = "TArER5bTuJrQtiBCfpRnXTCHtu9bnvU9Kv";
             sTemp = "<input id=\"copy_to_Clipboard\" value=\"" + walletAddress + "\" />"
             $("body").append(sTemp);
             $("#copy_to_Clipboard").select();

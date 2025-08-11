@@ -15,10 +15,10 @@ $inv_amount = session()->get('investment_amount');
                             <!-- account tittle -->
                             <div class="account__header">
                                 <h6 class="">
-                                    {!! $inv_amount ? "Confirm <span class='text_color-secondary'>Investment</span>" : __("Return On <span class='text_color-secondary'>Fixed Investment</span>") !!}
+                                    {!! $inv_amount ? "Confirm <span class='text_color-secondary'>Investment</span>" : __("Drive Higher ROI: <span class='text_color-secondary'>Fast Results & Sustainable Growth</span>") !!}
                                 </h6>
                                 <div class="d-flex justify-content-between">
-                                    <h6>{{ $days }} {{ $days > 1 ? 'Days' : 'Day' }}</h4>
+                                    <h6>{{ $days }} {{ $days > 1 ? 'Days' : 'Day' }} Return On Investment</h4>
                                 </div>
                             </div>
 
@@ -82,8 +82,8 @@ $inv_amount = session()->get('investment_amount');
                                         </div>
                                         <div class="col-12">
                                             <div class="form-pass">
-                                                <label for="inputPassword" class="form-label">Transaction Password</label>
-                                                <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Transaction Password" required>
+                                                <label for="inputPassword" class="form-label">Secure Transaction</label>
+                                                <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Secure Transaction Password" required>
 
                                                 <button type="button" id="togglePassword" class="form-pass__toggle"><i  id="eyeIcon" class="fa fa-eye"></i></button>
                                             </div>

@@ -153,7 +153,7 @@
 
                                                                             <![if !vml]><img border=0
                                                                                             width=121 height=50
-                                                                                            src="{{ asset('assets/img/logo.png') }}"
+                                                                                            src="{{ asset('assets/img/logo.jpeg') }}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                             <![endif]>
                                                                         </span><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>
@@ -195,7 +195,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>We hope this email finds you well. We would like to inform you that your recent withdrawal request <span style="color:#fd961a;">${{$withdrawal_amount}}</span>  from <span style="color:#fd961a;">Defi Gapz</span>  is currently pending. Our team is processing your request and we will notify you once the transaction has been completed. </span>
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>We hope this email finds you well. We would like to inform you that your recent withdrawal request <span style="color:#00D094;">${{$withdrawal_amount}}</span>  from <span style="color:#00D094;">Defi Gapz</span>  is currently pending. Our team is processing your request and we will notify you once the transaction has been completed. </span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -211,7 +211,7 @@
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-                                                            "Times New Roman";color:black'>Thank you for choosing <span style="color:#fd961a;">Defi Gapz</span>.</span>
+                                                            "Times New Roman";color:black'>Thank you for choosing <span style="color:#00D094;">Defi Gapz</span>.</span>
                                                     </p>
                                                 </td>
                                             </tr>

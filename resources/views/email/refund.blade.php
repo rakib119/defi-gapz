@@ -206,7 +206,7 @@
           </v:shape><![endif]-->
                                                                                         <![if !vml]><img border=0
                                                                                             width=121 height=50
-                                                                                            src="{{ asset('assets/img/logo.png') }}"
+                                                                                            src="{{ asset('assets/img/logo.jpeg') }}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                                         <![endif]>
                                                                                     </span><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:
@@ -284,7 +284,7 @@
                                                                 <p class=MsoNormal
                                                                     style='margin-bottom:0in;line-height:15.0pt'><span
                                                                         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-        "Times New Roman";color:black'>This is Shatakshi from the Refund Response Team at <span style="color:#fd961a;">Defi Gapz</span>
+        "Times New Roman";color:black'>This is Shatakshi from the Refund Response Team at <span style="color:#00D094;">Defi Gapz</span>
                                                                     </span></p>
                                                                 <p class=MsoNormal
                                                                     style='margin-bottom:0in;line-height:15.0pt'><span

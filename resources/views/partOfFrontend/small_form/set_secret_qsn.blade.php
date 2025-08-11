@@ -7,7 +7,12 @@
                         <!-- account tittle -->
                         <div class="account__header">
                             <h6>Secret Questions</h6>
-                            <p>You must answer minimum two questions and keep in mind that can be asked for any time incase of  any security issues raised.</p>
+                            <p>To ensure the security of your account, we’ve enabled <strong class="text_color-secondary">'two secret questions'</strong> that will be used to verify your identity for sensitive account changes. Please remember your answers or note it down , as they will be required for important actions like password resets or account recovery. </p>
+                            <ul>
+                                <li>* Keep your answers <strong class="text_color-secondary">memorable but secure</strong> (avoid easily guessable information).</li>
+                                <li>* <strong class="text_color-secondary">Don’t share</strong> them with anyone.  </li>
+                            </ul>
+                            <p style="margin-top: 7px;">Thank you for helping us keep your account safe!</p>
                         </div>
 
                         <form action="{{ route('set_ans.create')}}" method="POST" class="account__form needs-validation" novalidate>

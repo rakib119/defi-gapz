@@ -11,6 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ asset("assets/images/favicon.png") }}" type="image/x-icon">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI-Powered Crypto Arbitrage – Defi Gapz">
+    <meta property="og:description" content="Maximize crypto returns with our 24/7 AI arbitrage platform. Smart, fast, and secure.">
+    <meta property="og:image" content="{{ asset('images/social-preview-defigapz.jpg') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI-Powered Crypto Arbitrage – Defi Gapz">
+    <meta name="twitter:description" content="Maximize crypto returns with our 24/7 AI arbitrage platform. Smart, fast, and secure.">
+    <meta name="twitter:image" content="{{ asset('images/social-preview-defigapz.jpg') }}">
+
+
     <link rel="stylesheet" href="{{ asset("assets/css/bootstrap.min.css") }}">
     <link rel="stylesheet" href="{{ asset("assets/css/aos.css") }}">
     <link rel="stylesheet" href="{{ asset("assets/css/all.min.css") }}">
@@ -112,7 +125,7 @@
                 </div>
                 <div class="row my-2" id="notification-body">
                     <div class=" col-md-12 col-sm-12">
-                        <h5>{{ session('popup_message') }}</h5>
+                        <p>{{ session('popup_message') }}</p>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
@@ -141,6 +154,22 @@
     @endif
 
     @if (session('success'))
+        @php
+            $msg = session('success');
+            $msg_array = explode('**', $msg);
+            $button_name = 'Ok';
+            $title = 'Congratulations!';
+            if(count($msg_array)==1)
+            {
+                $msg_list = explode('##', $msg);
+
+            }else{
+                $title       = isset( $msg_array[0] ) ? $msg_array[0] : 'Congratulations!';
+                $button_name = isset( $msg_array[1] ) ? $msg_array[1] : 'Ok';
+                $msg_body    = isset( $msg_array[2] ) ? $msg_array[2] : "";
+                $msg_list    = explode('##', $msg_body);
+            }
+        @endphp
         <div class="custom-modal" id="successMessage">
             <div class="custom-modal-content mt-5 center" style="background:var(--tertiary-color);">
                 <div class="successIcon" style="color: var(--brand-color);" >
@@ -148,13 +177,23 @@
                 </div>
                 <div class="row  my-2">
                     <div class=" col-md-12 col-sm-12">
-                        <h6 class="text-center mb-3">Congratulations!</h6>
-                        <p class=" text-center">{{ session('success') }}</p>
+                        <h6 class="text-center mb-3">{{$title}}</h6>
+                    </div>
+                    <div class=" col-md-12 col-sm-12">
+                       <div style="padding-left: 4px;">
+                        <table style="text-align: left;">
+                            @foreach ($msg_list as $message)
+                                <tr>
+                                    <td class="borderless" style="width: 95%"><strong>{{$message}}</strong></td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    </div>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
                     {{-- <button id="okHide" class="text-center  btn btn-primary"  style="width:100%">ok</button> --}}
-                    <button id="okHide" class="trk-btn trk-btn-bg-sec" style="width:100%">Ok</button>
+                    <button id="okHide" class="trk-btn trk-btn-bg-sec" style="width:100%">{{ $button_name}}</button>
                 </div>
             </div>
         </div>

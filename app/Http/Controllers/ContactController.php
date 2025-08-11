@@ -26,8 +26,7 @@ class ContactController extends Controller
             'message' => $request->message,
             'created_at' => Carbon::now(),
         ]);
-        return back()->with('success', 'Message has been sent successfully. Our team will contact you shortly. Thank
-        you.');
+        return back()->with('success', "Thank you!**Ok**Your message has been delivered. We’ll get back to you soon.");
     }
     public function messages()
     {

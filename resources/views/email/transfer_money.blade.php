@@ -257,7 +257,7 @@ break-word'>
     </v:shape><![endif]-->
                                                     <![if !vml]>
                                                     <span style='mso-ignore:vglayout'>
-                                                        <img src="{{ asset('assets/img/logo.png') }}" border=0
+                                                        <img src="{{ asset('assets/img/logo.jpeg') }}" border=0
                                                             width=121 height=50 v:shapes="Picture_x0020_6">
                                                     </span>
                                                     <![endif]>
@@ -499,7 +499,7 @@ break-word'>
                             <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
                                 <td style='padding:15.0pt 22.5pt 15.0pt 22.5pt'>
                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-    "Times New Roman";color:#865474'>Thank you for choosing&nbsp;<span style="color:#fd961a;">(Defi Gapz)</span></span></b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#865474'>Thank you for choosing&nbsp;<span style="color:#00D094;">(Defi Gapz)</span></span></b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
     "Times New Roman";color:#865474'>
 
                                         </span></p>

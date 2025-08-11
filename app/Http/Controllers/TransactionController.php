@@ -162,7 +162,7 @@ class TransactionController extends Controller
             $account_statement_ceo->save();
         }
 
-        // $user->notify(new DepositNotification);
+        $user->notify(new DepositNotification);
         session()->forget('deposit_amount');
         session()->forget('s_user_name');
         return back()->with('success', 'Success');

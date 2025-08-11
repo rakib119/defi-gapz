@@ -35,33 +35,33 @@
                                         <div class="col-12">
                                             <div>
                                                 <label for="serviceCharge" class="form-label">Service Charge <span class="text-danger">*</span></label>
-                                                <input id="serviceCharge" class="form-control"  value="{{ session()->get('service_fee') }}" type="text">
+                                                <input id="serviceCharge" class="form-control"  value="{{ session()->get('service_fee') }}" type="text" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div>
                                                 <label for="total_transfer_amount" class="form-label">Total Transfer Amount <span class="text-danger">*</span></label>
-                                                <input id="total_transfer_amount" class="form-control"  value="{{ session()->get('total_transfer_amount') }}" type="text">
+                                                <input id="total_transfer_amount" class="form-control"  value="{{ session()->get('total_transfer_amount') }}" type="text" readonly>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-12 d-none">
                                             <div>
-                                                <label for="otp" class="form-label">OTP <span class="text-danger">*</span></label>
-                                                <input id="otp" class="form-control" name="otp" value="" type="text">
+                                                {{-- <label for="otp" class="form-label ">OTP <span class="text-danger">*</span></label> --}}
+                                                <input id="otp" class="form-control d-none" name="otp" value="{{ session()->get('otp') }}" type="text">
                                             </div>
-                                            @error('otp')
+                                            {{-- @error('otp')
                                                 <span class="my-2 text-danger"> {{ $message }}</span>
                                             @enderror
                                             @if ($otp_error = session()->get('otp_error'))
                                                 <span class="my-2 text-danger"> {{ $otp_error }}</span>
-                                            @endif
+                                            @endif --}}
                                         </div>
                                     </div>
                                     <div>
                                         <button type="submit" class="trk-btn trk-btn--border trk-btn--primary d-block mt-4">Confirm</button>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <a class="trk-btn trk-btn--border trk-btn--primary" href="{{ route('cancle') }}">{{ __('Cancel') }}</a>
+                                        <a class="trk-btn trk-btn--border trk-btn--primary d-block" href="{{ route('cancle') }}">{{ __('Cancel') }}</a>
                                     </div>
                                 </form>
                             @else

@@ -111,7 +111,9 @@ class EarnController extends Controller
             // $AccountStatement->total_withdraw = $AccountStatement->total_withdraw + $total_withdrawal_amount;
             $AccountStatement->balance = $new_balance;
             $AccountStatement->save();
-            return back()->with('investment_success', 'Thank you for Investing.');
+
+            $roi_period = $fixed_deposit->days > 1 ? $fixed_deposit->days.' Days' : $fixed_deposit->days.' Day';
+            return back()->with('success','Investment confirmed!**Ok**Amount- $'.$investment_amount.'##ROI period- '.$roi_period.'##Expected profit- $'.$total_profit);
         } else {
             return back()->with('otp_error', 'Something went wrong');
         }

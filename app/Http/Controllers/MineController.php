@@ -87,7 +87,7 @@ class MineController extends Controller
         if ($user->transaction_password) {
              $msg = 'Transaction Password modified successfully';
         }else{
-            $msg = 'Transaction Password set successfully';
+            $msg = 'Transaction security activated !**Done** ';
         }
         $user->transaction_password = Hash::make($request->transaction_password);
         $user->save();
@@ -248,6 +248,7 @@ class MineController extends Controller
         if (has_lone()) {
             return back()->with('error', 'Insufficient Balance');
         }
+        // return $request;
         $transaction_password = auth()->user()->transaction_password;
         if ($transaction_password) {
             $password = Hash::check($request->transaction_password, $transaction_password);

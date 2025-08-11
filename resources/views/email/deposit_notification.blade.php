@@ -846,7 +846,7 @@ w\:* {behavior:url(#default#VML);}
         </v:shape><![endif]-->
                                                                             <![if !vml]><img border=0
                                                                                             width=121 height=50
-                                                                                            src="{{ asset('assets/img/logo.png') }}"
+                                                                                            src="{{ asset('assets/img/logo.jpeg') }}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                             <![endif]>
                                                                         </span><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:
@@ -889,7 +889,7 @@ w\:* {behavior:url(#default#VML);}
                                                 <td style='background:white;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
                                                     <p class=MsoNormal style='margin-bottom:0in;line-height:15.0pt'>
                                                         <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>
-                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>This is to notify you that a deposit for the amount of <span style="color:#fd961a;">${{ number_format($amount, 2) }} </span> has been successfully credited to your account<span style="color:#fd961a;">(Defi Gapz)</span>. Please check your account statement to ensure the deposit has been made.</span>, our premier cryptocurrency trading platform.</span>
+                                                        <span style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:  "Times New Roman";color:black'>This is to notify you that a deposit for the amount of <span style="color:#00D094;">${{ number_format($amount, 2) }} </span> has been successfully credited to your account<span style="color:#00D094;">(Defi Gapz)</span>. Please check your account statement to ensure the deposit has been made.</span>, our premier cryptocurrency trading platform.</span>
                                                     </p>
                                                 </td>
                                             </tr>

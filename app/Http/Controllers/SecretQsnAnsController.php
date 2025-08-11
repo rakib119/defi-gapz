@@ -84,7 +84,7 @@ class SecretQsnAnsController extends Controller
             if( $total_ans == 1 ){
                 return back()->with('error','At least one more answer needed');
             }else{
-                return back()->with('success','Now you are able to set your transaction password ');
+                return back()->with('success','Security Alert!**Understood** → *Never share them*##→ *Never save them in plain text*');
             }
         }
     }

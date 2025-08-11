@@ -65,7 +65,7 @@ function clear_session()
 function insufficient_balance($transaction_amount, $service_charge)
 {
     $updated_balance =  updated_balance($transaction_amount, $service_charge);
-    if ($updated_balance <= 2) {
+    if ($updated_balance <= 6) {
         clear_session();
         return true;
     }
@@ -140,6 +140,7 @@ function user_id($uid)
 }
 function freeze_deposit_amount($uid=null)
 {
+    return 0;
     if(!$uid){
         $uid = auth()->user()->uid;
     }

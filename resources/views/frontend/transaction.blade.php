@@ -388,16 +388,30 @@
                                 market_price = data.market_price*1;
                                 trans_amount = data.transaction_amount*1;
                                 order_amount = data.order_amount*1;
+                                if (order_amount>0) {
+                                    $('#opportunities').html(data.opportunities);
+                                    $('#advNo').html(data.adv_no);
+                                    $('#classify').html(data.classify);
+                                    $('#nickName').html(data.nick_name);
+                                    $('#fiat').html(data.fiat);
+                                    $('#marketPrice').html(market_price.toFixed(3));
+                                    $('#transactionAmount').html(trans_amount.toFixed(
+                                        3));
+                                    $('#amountOfOrder').html(order_amount.toFixed(3));
+                                }
+                                else
+                                {
+                                    $('#errMsg').html('Something went wrong. Please try again later.');
+                                    searchingDiv.hide();
+                                    immediateCompititionDiv.hide();
+                                    Congratulations.hide();
+                                    errorSection.show();
+                                    clearInterval(countdownInterval);
+                                    compititionForOrderBtn.show();
+                                    return;
+                                }
 
-                                $('#opportunities').html(data.opportunities);
-                                $('#advNo').html(data.adv_no);
-                                $('#classify').html(data.classify);
-                                $('#nickName').html(data.nick_name);
-                                $('#fiat').html(data.fiat);
-                                $('#marketPrice').html(market_price.toFixed(3));
-                                $('#transactionAmount').html(trans_amount.toFixed(
-                                    3));
-                                $('#amountOfOrder').html(order_amount.toFixed(3));
+
                             },
                         });
                     }

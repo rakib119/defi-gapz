@@ -3,14 +3,15 @@
 @endphp
 <section class="account padding-top padding-bottom sec-bg-color2">
     <div class="container">
+         <div class="section-header-2 d-md-flex align-items-center justify-content-between">
+            <div class="section-header section-header--max50">
+                <h6 class="mb-10 mt-minus-5"><span>Transaction</span> Password</h6>
+            </div>
+        </div>
         <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
             <div class="row g-4">
                 <div class="col-lg-12">
                     <div class="account__content account__content--style1">
-                        <div class="account__header">
-                            <h6>Transaction Password</h6>
-                        </div>
-
                         <form action="{{ route('change_transaction_password') }}" method="POST" class="account__form needs-validation" novalidate>
                             @csrf
                             <div class="row g-4">
