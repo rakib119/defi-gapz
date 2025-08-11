@@ -257,7 +257,7 @@ break-word'>
     </v:shape><![endif]-->
                                                     <![if !vml]>
                                                     <span style='mso-ignore:vglayout'>
-                                                        <img src="{{ asset('assets/img/logo.jpeg') }}" border=0
+                                                        <img src="{{ asset('assets/img/logo-dark.png') }}" border=0
                                                             width=121 height=50 v:shapes="Picture_x0020_6">
                                                     </span>
                                                     <![endif]>

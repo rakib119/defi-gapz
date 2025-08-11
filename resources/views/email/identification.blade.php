@@ -205,7 +205,7 @@
           </v:shape><![endif]-->
                                                                                         <![if !vml]><img border=0
                                                                                             width=121 height=50
-                                                                                            src="{{asset('assets/img/logo.jpeg')}}"
+                                                                                            src="{{asset('assets/img/logo-dark.png')}}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                                         <![endif]>
                                                                                     </span><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:
@@ -382,7 +382,7 @@
                                                                                         <p class=MsoNormal
                                                                                             style='margin-bottom:0in;line-height:15.0pt'>
                                                                                             <span style='font-size:8.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
-            "Times New Roman";color:black'><img border=0 width=121 height=50 src="{{asset('assets/img/logo.jpeg')}}">
+            "Times New Roman";color:black'><img border=0 width=121 height=50 src="{{asset('assets/img/logo-dark.png')}}">
                                                                                                 <o:p></o:p>
                                                                                             </span>
                                                                                         </p>

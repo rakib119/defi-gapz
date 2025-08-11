@@ -153,7 +153,7 @@
 
                                                                             <![if !vml]><img border=0
                                                                                             width=121 height=50
-                                                                                            src="{{ asset('assets/img/logo.jpeg') }}"
+                                                                                            src="{{ asset('assets/img/logo-dark.png') }}"
                                                                                             v:shapes="Picture_x0020_1">
                                                                             <![endif]>
                                                                         </span><span style='font-size:12.0pt;font-family:Roboto;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>

@@ -35,7 +35,7 @@ Route::post('contact-post', [ContactController::class, 'contact_post'])->name('c
 Route::get('clr',[ScheduleController::class,'teamIncomeScheduler']);
 Route::get('s', [FrontendController::class, 's'])->name('s');
 Route::post('test', [FrontendController::class, 'test'])->name('test');
-Route::middleware(['auth' ])->group(function () { //,'verified'
+Route::middleware(['auth','verified' ])->group(function () { //
     Route::get('send-mail', [MailController::class, 'index'])->name('send_mail_view');
     Route::post('send-mail-post', [MailController::class, 'send_mail'])->name('send_mail_post');
     Route::get('profile', [FrontendController::class, 'profile'])->name('profile');
@@ -87,7 +87,7 @@ Route::middleware(['auth' ])->group(function () { //,'verified'
 
 });
 //backend
-Route::middleware(['auth', 'admin'])->group(function () {//, 'verified'
+Route::middleware(['auth', 'admin', 'verified'])->group(function () {//
     Route::get('/admin', [HomeController::class, 'index'])->name('admin');
     Route::put('/change/withdrawal/method/status/{method}', [HomeController::class, 'change_withdrawal_method_status'])->name('change_withdrawal_method_status');
     Route::post('get-users', [HomeController::class, 'get_users'])->name('get_users');
