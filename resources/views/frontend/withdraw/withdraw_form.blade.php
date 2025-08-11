@@ -57,7 +57,7 @@
                                         <button type="submit" class="trk-btn trk-btn--border trk-btn--primary d-block mt-4">Confirm</button>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <a class="trk-btn trk-btn--border trk-btn--primary" href="{{ route('cancle') }}">{{ __('Cancel') }}</a>
+                                        <a class="trk-btn trk-btn--border trk-btn--primary d-block" href="{{ route('cancle') }}">{{ __('Cancel') }}</a>
                                     </div>
                                 </form>
                             @else

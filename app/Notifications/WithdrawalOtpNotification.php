@@ -41,7 +41,7 @@ class WithdrawalOtpNotification extends Notification
      */
     public function toMail($notifiable)
     {
-
+        $otp=session()->get('otp');
         return (new MailMessage)
             ->view('email.immediatepurchase', compact('otp'));
     }
