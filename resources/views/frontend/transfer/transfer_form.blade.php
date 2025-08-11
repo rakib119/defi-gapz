@@ -9,7 +9,7 @@
         <div class="container">
             <div class="section-header-2 d-md-flex align-items-center justify-content-between">
                 <div class="section-header section-header--max50">
-                    <h6 class="mb-10 mt-minus-5">{!! $transfer_amount ? '<span>Confirm</span> Transfer':  __('<span>Transfer</span> Money') !!}</h6>
+                    <h6 class="mb-10 mt-minus-5">{!! $transfer_amount ? '<span>Confirm</span> Fund Transfer':  __('<span>Fund</span> Transfer') !!}</h6>
                 </div>
             </div>
             <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
@@ -90,7 +90,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-pass">
-                                                <label for="transactionPassword" class="form-label">Transaction Password <span class="text-danger">*</span></label>
+                                                <label for="transactionPassword" class="form-label">Secure Transaction <span class="text-danger">*</span></label>
                                                 <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Transaction Password" required autocomplete="off">
 
                                                 <button type="button" id="togglePassword" class="form-pass__toggle"><i  id="eyeIcon" class="fa fa-eye"></i></button>

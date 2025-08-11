@@ -83,7 +83,7 @@ $inv_amount = session()->get('investment_amount');
                                         <div class="col-12">
                                             <div class="form-pass">
                                                 <label for="inputPassword" class="form-label">Secure Transaction</label>
-                                                <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Secure Transaction Password" required>
+                                                <input type="password" name="transaction_password" class="form-control showhide-pass" id="transactionPassword" placeholder="Transaction Password" required>
 
                                                 <button type="button" id="togglePassword" class="form-pass__toggle"><i  id="eyeIcon" class="fa fa-eye"></i></button>
                                             </div>

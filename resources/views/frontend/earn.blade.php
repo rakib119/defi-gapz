@@ -19,7 +19,7 @@
                                         $investment_profit = $account_statement->investment_profit;
                                         $profit_per        = $investment_profit > 0 ? ($investment_profit / $total_investment) * 100 : 0;
                                     @endphp
-                                    <p class="card-text  text_color-secondary">{!! $investment_profit>0?"<i class='fa-solid fa-arrow-trend-up'></i>":"" !!}${{ number_format($investment_profit, 2) }}{{ $profit_per>0 ?  "(".number_format($investment_profit, 2).")%" : "" }}</p>
+                                    <p class="card-text  text_color-secondary">{{ $investment_profit>0?"+":"" }}${{ number_format($investment_profit, 2) }}</p>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-title">Locked Amount(ROI)</p>

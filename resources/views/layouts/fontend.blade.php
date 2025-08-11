@@ -135,6 +135,22 @@
         </div>
     @endif
     @if (session('error'))
+        @php
+            $msg = session('success');
+            $msg_array = explode('**', $msg);
+            $button_name = 'Ok';
+            $title = 'Opps!';
+            if(count($msg_array)==1)
+            {
+                $msg_list = explode('##', $msg);
+
+            }else{
+                $title       = isset( $msg_array[0] ) ? $msg_array[0] :  'Opps!';
+                $button_name = isset( $msg_array[1] ) ? $msg_array[1] : 'Ok';
+                $msg_body    = isset( $msg_array[2] ) ? $msg_array[2] : "";
+                $msg_list    = explode('##', $msg_body);
+            }
+        @endphp
         <div class="custom-modal" id="successMessage">
             <div class="custom-modal-content mt-5 center">
                 <div class="errorIcon text-danger">
@@ -142,12 +158,23 @@
                 </div>
                 <div class="row  my-2">
                     <div class=" col-md-12 col-sm-12">
-                        <h6 class="text-center text-danger mb-3">Opps!</h6>
+                        <h6 class="text-center text-danger mb-3">{{$title}}</h6>
                         <p class=" text-center text-danger text-capitalize">  {{ session('error') }}</p>
+                    </div>
+                    <div class=" col-md-12 col-sm-12">
+                        <div style="padding-left: 4px;">
+                            <table style="text-align: left;">
+                                @foreach ($msg_list as $message)
+                                    <tr>
+                                        <td class="borderless text-danger text-capitalize" style="width: 95%"><strong>{{$message}}</strong></td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">
-                    <button id="okHide" class="text-center trk-btn trk-btn-danger text-white" style="width:100%">ok</button>
+                    <button id="okHide" class="text-center trk-btn trk-btn-danger text-white" style="width:100%">{{$button_name}}</button>
                 </div>
             </div>
         </div>
@@ -180,15 +207,15 @@
                         <h6 class="text-center mb-3">{{$title}}</h6>
                     </div>
                     <div class=" col-md-12 col-sm-12">
-                       <div style="padding-left: 4px;">
-                        <table style="text-align: left;">
-                            @foreach ($msg_list as $message)
-                                <tr>
-                                    <td class="borderless" style="width: 95%"><strong>{{$message}}</strong></td>
-                                </tr>
-                            @endforeach
-                        </table>
-                    </div>
+                        <div style="padding-left: 4px;">
+                            <table style="text-align: left;">
+                                @foreach ($msg_list as $message)
+                                    <tr>
+                                        <td class="borderless" style="width: 95%"><strong>{{$message}}</strong></td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center mt-4 mt-3">

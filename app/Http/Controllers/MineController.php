@@ -147,7 +147,7 @@ class MineController extends Controller
         ]);
         if ($request->withdrawal_method == 0) {
             if (!$user->wallet_address) {
-                return back()->with('error', 'please set your wallet address first');
+                return back()->with('error', 'Opps!**Ok**please set your wallet address first!##Go to mine -> personal information -> set your withdrawal wallet adress USDT(Trc20)');
             } else {
                 $status = 1;
             }
@@ -173,7 +173,7 @@ class MineController extends Controller
                         'otp' => $otp
                     ]);
 
-                //    Notification::send($user, new WithdrawalOtpNotification);
+                   Notification::send($user, new WithdrawalOtpNotification);
                     return back();
                 } else {
                     return back()->with('error', 'Incorrect Password');
@@ -354,12 +354,12 @@ class MineController extends Controller
             $receiverAccountStatement->total_deposite = $receiverAccountStatement->total_deposite +  $transfer_amount;
             $receiverAccountStatement->balance = $receiverBalance + $transfer_amount;
             $receiverAccountStatement->save();
-            /* $sender = User::where('uid',  auth()->user()->uid)->first();
+            $sender = User::where('uid',  auth()->user()->uid)->first();
             $receiver = User::where('uid',  $session_uid)->first();
             Notification::send($sender, new MoneyTransferFromYourAccountSuccessfully);
-            Notification::send($receiver, new CongratulationsYouReceivedMoney); */
+            Notification::send($receiver, new CongratulationsYouReceivedMoney);
             session()->forget(['transaction_id', 'sender_id', 'receiver_id', 'transaction_amount', 'transaction_fee', 'subtotal', 'created_at', 'otp']);
-            return back()->with('success', 'Thank you for sending money.');
+            return back()->with('success', 'Transfer successful!**Ok**Your crypto has been sent. Always verify the transaction details.');
         } else {
             return back()->with('otp_error', 'Please enter correct OTP');
         }

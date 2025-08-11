@@ -10,7 +10,7 @@
 @section('main-content')
     <section class="pricing padding-top padding-bottom-2" id="transictionHall">
         <div class="section-header section-header--max50">
-            <h6 class="mb-10 mt-minus-5"><span>Defi </span>Gapz</h6>
+            <h6 class="mb-10 mt-minus-5"><span>AI Arbitrage </span>Machine</h6>
         </div>
         <div class="container">
             <div class="pricing__wrapper">
