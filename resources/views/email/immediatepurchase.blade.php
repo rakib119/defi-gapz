@@ -16,7 +16,7 @@
                 style="background: #E9B434;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">
                 {{ $otp }}</h2>
             <p>The verification code will be valid for 60 minutes. Please do not share this code with anyone.
-                If you did not initiate this operation, click the link below to contact OTT Customer Service:
+                If you did not initiate this operation, click the link below to contact Defi Gapz contact support:
             </p>
             <a href="{{route('contact-us')}}" target="_blank"><span
                     style='color:#E9B434'>{{route('contact-us')}}</span></a></span></p>

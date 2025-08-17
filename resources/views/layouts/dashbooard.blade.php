@@ -148,6 +148,12 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{{route('history.freeze_amount')}}" class="waves-effect">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Freeze Amount History</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{ route('history.transactions') }}" class="waves-effect">
                                 <i class="fas fa-exchange-alt"></i>
                                 <span>Transaction History</span>

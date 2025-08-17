@@ -31,7 +31,7 @@
                                     Deposit
                                 </a>
                             </div>
-                            <div class="banner__content-social">
+                            <div class="banner__content-social d-none">
                                 <p>Follow Us</p>
                                 <ul class="social">
                                     <li class="social__item">

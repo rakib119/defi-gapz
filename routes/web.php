@@ -128,6 +128,7 @@ Route::middleware(['auth', 'admin', 'verified'])->group(function () {//
     Route::put('about/update', [AboutController::class, 'update'])->name('about.update');
     Route::resource('notice', NoticeController::class)->except('show');
     Route::get('transactions/history', [TransactionHistoryController::class, 'transactions_history'])->name('history.transactions');
+    Route::get('freeze/amount/history', [TransactionHistoryController::class, 'freeze_amount_history'])->name('history.freeze_amount');
     Route::get('get/transactions_history', [TransactionHistoryController::class, 'get_transactions_history'])->name('get_transactions_history');
     Route::get('edit/balance/satement/{user}', [HomeController::class, 'edit_blance_statement_form'])->name('edit_blance_statement_form');
     Route::put('edit/balance/satement/{user}', [HomeController::class, 'edit_blance_statement_post'])->name('edit_blance_statement_post');

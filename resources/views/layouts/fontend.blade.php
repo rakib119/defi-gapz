@@ -368,7 +368,7 @@
                     target="_blank">{{ env('APP_NAME') }}</a> </p>
                 </div>
                 <div>
-                <ul class="social">
+                <ul class="social d-none">
                     <li class="social__item">
                     <a href="#" class="social__link social__link--style22"><i class="fab fa-facebook-f"></i></a>
                     </li>
