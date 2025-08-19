@@ -104,7 +104,7 @@ class MineController extends Controller
     public function withdrawal_records(Request $request)
     {
         return view('frontend.mine.withdrawal_records', [
-            'records' => AccountTransaction::where(['uid' => auth()->user()->uid, 'transaction_type' => 2])->get()
+            'records' => AccountTransaction::where(['uid' => auth()->user()->uid, 'transaction_type' => 2])->orderBy('id', 'DESC')->get()
         ]);
     }
     public function withdraw_money()
@@ -368,7 +368,7 @@ class MineController extends Controller
     {
         $uid =  auth()->user()->uid;
         return view('frontend.mine.tranfer_history', [
-            'histories' => DB::table('account_transactions')->whereRaw("transaction_type=3 and (transfer_from='$uid' OR transfer_to='$uid')")->orderBy('created_at', 'desc')->take(10)->get()
+            'histories' => DB::table('account_transactions')->whereRaw("transaction_type=3 and (transfer_from='$uid' OR transfer_to='$uid')")->orderBy('created_at', 'DESC')->take(10)->get()
         ]);
     }
     // identification
@@ -398,14 +398,14 @@ class MineController extends Controller
     public function my_team()
     {
         return view('frontend.mine.my_team', [
-            'teams' => User::where('reference', auth()->user()->uid)->get()
+            'teams' => User::where('reference', auth()->user()->uid)->orderBy('id', 'DESC')->get()
         ]);
     }
     // marchants list
     public function merchant_list()
     {
         return view('frontend.mine.marchants', [
-            'merchants' => User::where('role', 2)->get()
+            'merchants' => User::where('role', 2)->orderBy('id', 'DESC')->get()
         ]);
     }
     // team Member income list
