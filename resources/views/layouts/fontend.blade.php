@@ -456,34 +456,46 @@
     @endauth
     {{-- ======================================== Inspect Disable Start ============================================= --}}
     <script>
-       /*  //   disable write click
-          $(document).bind("contextmenu", (e) => false);
-          disable mouse hold
-          $(document).on("mousedown", "*", null, function(ev) {
-            ev.preventDefault();
-          });
-        //   disable some keys
-          document.onkeydown = function(e) {
-            if (e.keyCode == 123) {
-              return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-              return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-              return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-              return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-              return false;
-            }
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
 
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-              return false;
+        // Disable common key combos
+        document.addEventListener("keydown", function(e) {
+            // F12
+            if (e.keyCode === 123) {
+                e.preventDefault();
             }
-          } */
+            // Ctrl+Shift+I (Inspect)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                e.preventDefault();
+            }
+            // Ctrl+Shift+J (Console)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+                e.preventDefault();
+            }
+            // Ctrl+U (View Source)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Ctrl+Shift+C (Inspect element)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+                e.preventDefault();
+            }
+            // Ctrl+S (Save Page)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+        }, false);
+        (function() {
+            var element = new Image();
+            Object.defineProperty(element, 'id', {
+                get: function() {
+                    window.location.href = "/"; // redirect home if console is opened
+                }
+            });
+            console.log(element);
+        })();
     </script>
     {{-- ======================================== Inspect Disable End ============================================= --}}
 
