@@ -7,6 +7,7 @@ use App\Models\InTransition;
 use App\Models\TeamIncome;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Yajra\DataTables\Facades\DataTables;
 
 class TransactionHistoryController extends Controller
 {
@@ -20,10 +21,9 @@ class TransactionHistoryController extends Controller
     }
 
     public function get_transactions_history()
-
     {
-        $transactions = AccountTransaction::select('id', 'uid', 'old_balance', 'transaction_id', 'transaction_amount', 'profit', 'current_balance', 'subtotal')->get();
-        return  datatables()->collection($transactions)->toJson();
+        $transactions = AccountTransaction::select('id', 'uid', 'old_balance', 'transaction_id', 'transaction_amount', 'profit', 'current_balance', 'subtotal')->orderBy('id','DESC');
+        return DataTables::eloquent($transactions)->toJson();
     }
     public function freeze_amount_history()
     {

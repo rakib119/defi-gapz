@@ -56,6 +56,7 @@ class HomeController extends Controller
                         });
                     })
                     ->select('a.id','a.name','a.uid','a.role','a.country','a.identification_status','b.balance')
+                    ->orderBy('id', 'DESC')
                     ->take(10)->get();
 
         $v = view('backend.small_part.user_table_row', compact('users'));
