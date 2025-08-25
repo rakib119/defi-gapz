@@ -222,7 +222,7 @@
                                                             <div class="col-md-8">
                                                                 <input type="text" name='telegram'
                                                                     placeholder="Enter telegram link"
-                                                                    class="form-control">
+                                                                    class="form-control" value="{{ $user->telegram }}">
                                                                 @error('telegram')
                                                                     <h6 class="text-danger"> {{ $message }}</h6>
                                                                 @enderror

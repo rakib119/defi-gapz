@@ -32,7 +32,7 @@
                                                     <td>{{ $data->email }} </td>
                                                     <td>
                                                         <a class="trk-btn trk-btn--border trk-btn--secondary"
-                                                            href="{{ $data->telegram ? $data->telegram : 'javascript:void(0)' }}">
+                                                            href="{{ $data->telegram ? $data->telegram : 'javascript:void(0)' }}" target="_blank">
                                                             Contact</a>
                                                     </td>
                                                 </tr>
