@@ -161,7 +161,7 @@ class CompetitionController extends Controller
 
         $service_fees       = DB::table('service_fees')->where('transaction_type',5)->first('fees');
         $service_fees_ratio =  $service_fees->fees;
-        $profit_margin      = mt_rand(0.57 * $div, 0.73 * $div) / $div;
+        $profit_margin      = mt_rand(0.45 * $div, 0.65 * $div) / $div;
         $profit             = $order_amount * ($profit_margin / 100);
         $profit             = number_format($profit, 3);
         $charege            = $profit *  ($service_fees_ratio/100);
