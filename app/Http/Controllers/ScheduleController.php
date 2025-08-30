@@ -169,7 +169,7 @@ class ScheduleController extends Controller
         $todays_profited_account = AccountTransaction::where('profit', '>', 0.00)->whereDate('created_at', today());
             $uids =  $todays_profited_account->select('uid')->groupBY('uid')->get();
             foreach ($uids as  $uid) {
-                $profit = AccountTransaction::where('uid', $uid->uid)->sum('profit');
+                $profit = AccountTransaction::where('uid', $uid->uid)->whereDate('created_at', today())->sum('profit');
                 $profit_ratio_gen1 = 15;
                 $profit_ratio_gen2 = 10;
                 $profit_ratio_gen3 = 5;
