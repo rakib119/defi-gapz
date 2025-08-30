@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" href="{{ asset("assets/images/favicon.png") }}" type="image/x-icon">
 
     <meta property="og:type" content="website">
@@ -455,7 +455,7 @@
         </script>
     @endauth
     {{-- ======================================== Inspect Disable Start ============================================= --}}
-    <script>
+    {{-- <script>
         document.addEventListener("contextmenu", function(e){
             e.preventDefault();
         }, false);
@@ -496,7 +496,7 @@
             });
             console.log(element);
         })();
-    </script>
+    </script> --}}
     {{-- ======================================== Inspect Disable End ============================================= --}}
 
 

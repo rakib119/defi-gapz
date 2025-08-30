@@ -530,16 +530,17 @@ table thead tr th, table tbody tr td{
 
 /*===============Android Menu Start===============*/
 .android-menu-bar {
-    background-color: var(--header-bg-color);
-    /* padding-bottom: 5px !important; */
     position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
+    padding-bottom: env(safe-area-inset-bottom);
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     z-index: 999;
+    /* padding-bottom: 5px !important; */
+    background-color: var(--header-bg-color);
     border-top: 1px solid var(--brand-color);
   }
 @media (max-width: 991px) {
@@ -585,7 +586,7 @@ table thead tr th, table tbody tr td{
          padding: 12px 30px !important;
     }
     .trk-btn-auth{
-        font-size: 13px !important;s
+        font-size: 13px !important;
     }
     .android-menu-item .active {
       color: var(--brand-color);
